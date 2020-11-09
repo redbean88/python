@@ -11,10 +11,12 @@
 # 총 탑승 승객 : 2 분
 
 from random import *
-
+customer = 0
 for i in range(1,51):
     flag = " "
     time = randint(5,50)
-    if(15 >= time >= 5 ) flag = "O"
-    print("[{0}]".format(flag))
-
+    if(15 >= time >= 5 ):
+        flag = "O"
+        customer+=1
+    print("[{0}] {1}번째 손님 ( 소요시간 : {2}분)".format(flag,i,time))
+print("총 탑승 승객 : {0} 분".format(customer))

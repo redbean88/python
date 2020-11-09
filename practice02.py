@@ -46,6 +46,7 @@ print(pow(3,2)) # 3^2 (제곱)
 print(max(5,12)) # 12 
 print(min(5,12)) # 5
 print(round(5.12)) # 5 (반올림)
+print(round(5.12,2)) # 5 (소수점 둘째자리)
 
 # 라이브러리 import
 from math import *
